@@ -11,7 +11,7 @@ import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
 
-    Random r=new Random();
+    Random r=new Random(); //Random is a class which generates random values
     int RandomNumber=r.nextInt(20)+1;
 
     public void toastCheck(String check){
@@ -24,11 +24,11 @@ public class MainActivity extends AppCompatActivity {
         EditText value;
         value=(EditText)findViewById(R.id.value);
         int number=Integer.parseInt(value.getText().toString());
-        if(RandomNumber > number)
+        if(RandomNumber > number)       // If Random number is bigger then entered value then this statement will execute  
         {
             toastCheck("Higher Try Again !!");
         }
-        else if(RandomNumber < number)
+        else if(RandomNumber < number)  
         {
             toastCheck("Lower Try Again !!");
         }
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {        // On create function creates or run the activity when the MainActivity.java executes
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
