@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Random r=new Random(); //Random is a class which generates random values
     int RandomNumber=r.nextInt(20)+1;
 
-    public void toastCheck(String check){
+    public void toastCheck(String check){  //This function calls toast function
         Toast.makeText(MainActivity.this,check, Toast.LENGTH_SHORT).show();
     }
 
